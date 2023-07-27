@@ -1,28 +1,31 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>正負の計算練習ゲーム</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
-</head>
-<body class="h-screen w-screen flex flex-col items-center justify-center bg-gray-200">
-    <h1 class="text-4xl font-bold mb-4">正負の計算練習ゲーム</h1>
-    <div id="question" class="text-2xl mb-4"></div>
-    <div class="mb-4 flex">
-        <input type="radio" id="positive" name="sign" value="positive" class="mr-2">
-        <label for="positive" class="mr-4">+</label>
-        <input type="radio" id="negative" name="sign" value="negative" class="mr-2">
-        <label for="negative">-</label>
-    </div>
-    <button onclick="checkSign()" class="mb-4 bg-blue-500 text-white px-4 py-2 rounded">符号を提出</button>
-    <div id="sign_result" class="mb-4 text-xl"></div>
-    <div id="numberpad" class="grid grid-cols-3 gap-4 mb-4">
-        <!-- Number buttons... -->
-    </div>
-    <input type="number" id="answer" class="mb-4 bg-white px-4 py-2 rounded" readonly>
-    <button onclick="checkAnswer()" class="mb-4 bg-blue-500 text-white px-4 py-2 rounded">数値を提出</button>
-    <div id="result" class="text-xl mb-4"></div>
-    <div id="score" class="text-xl">正解数：0、不正解数：0、正解率：0%</div>
 
-    <script src="script.js"></script>
+<head>
+  <title>正負の計算練習 ゲーム</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="h-screen w-screen flex flex-col items-center justify-center bg-gray-200">
+  <h1 class="text-4xl font-bold mb-4">正負の計算練習ゲーム</h1>
+  <div id="question" class="text-2xl mb-4"></div>
+  <div class="mb-4 flex">
+    <input type="radio" id="positive" name="sign" value="positive" class="mr-2">
+    <label for="positive" class="mr-4">+</label>
+    <input type="radio" id="negative" name="sign" value="negative" class="mr-2">
+    <label for="negative">-</label>
+  </div>
+  <button onclick="checkSign()" class="mb-4 bg-blue-500 text-white px-4 py-2 rounded">符号を提出</button>
+  <div id="sign_result" class="mb-4 text-xl"></div>
+  <div id="numberpad" class="grid grid-cols-3 gap-4 mb-4">
+    <!-- Number buttons... -->
+  </div>
+  <input type="number" id="answer" class="mb-4 bg-white px-4 py-2 rounded" readonly>
+  <button onclick="checkAnswer()" class="mb-4 bg-blue-500 text-white px-4 py-2 rounded">数値を提出</button>
+  <div id="result" class="text-xl mb-4"></div>
+  <div id="score" class="text-xl">正解数：0、不正解数：0、正解率：0%</div>
+
+  <script src="script.js"></script>
 </body>
+
 </html>
