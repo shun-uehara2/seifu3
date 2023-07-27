@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>正負の計算練習 ゲーム</title>
+  <title>正負の計算練習ゲーム</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
 </head>
 
@@ -18,10 +18,32 @@
   <button onclick="checkSign()" class="mb-4 bg-blue-500 text-white px-4 py-2 rounded">符号を提出</button>
   <div id="sign_result" class="mb-4 text-xl"></div>
   <div id="numberpad" class="grid grid-cols-3 gap-4 mb-4">
-    <!-- Number buttons... -->
+    <button class="number-button bg-blue-500 text-white w-12 h-12 rounded-full focus:outline-none"
+      onclick="appendNumber(1)">1</button>
+    <button class="number-button bg-blue-500 text-white w-12 h-12 rounded-full focus:outline-none"
+      onclick="appendNumber(2)">2</button>
+    <button class="number-button bg-blue-500 text-white w-12 h-12 rounded-full focus:outline-none"
+      onclick="appendNumber(3)">3</button>
+    <button class="number-button bg-blue-500 text-white w-12 h-12 rounded-full focus:outline-none"
+      onclick="appendNumber(4)">4</button>
+    <button class="number-button bg-blue-500 text-white w-12 h-12 rounded-full focus:outline-none"
+      onclick="appendNumber(5)">5</button>
+    <button class="number-button bg-blue-500 text-white w-12 h-12 rounded-full focus:outline-none"
+      onclick="appendNumber(6)">6</button>
+    <button class="number-button bg-blue-500 text-white w-12 h-12 rounded-full focus:outline-none"
+      onclick="appendNumber(7)">7</button>
+    <button class="number-button bg-blue-500 text-white w-12 h-12 rounded-full focus:outline-none"
+      onclick="appendNumber(8)">8</button>
+    <button class="number-button bg-blue-500 text-white w-12 h-12 rounded-full focus:outline-none"
+      onclick="appendNumber(9)">9</button>
+    <button class="number-button bg-blue-500 text-white w-12 h-12 rounded-full focus:outline-none"
+      onclick="clearNumber()">C</button>
+    <button class="number-button bg-blue-500 text-white w-12 h-12 rounded-full focus:outline-none"
+      onclick="appendNumber(0)">0</button>
+    <button class="number-button bg-blue-500 text-white w-12 h-12 rounded-full focus:outline-none"
+      onclick="checkAnswer()">確認</button>
   </div>
   <input type="number" id="answer" class="mb-4 bg-white px-4 py-2 rounded" readonly>
-  <button onclick="checkAnswer()" class="mb-4 bg-blue-500 text-white px-4 py-2 rounded">数値を提出</button>
   <div id="result" class="text-xl mb-4"></div>
   <div id="score" class="text-xl">正解数：0、不正解数：0、正解率：0%</div>
 
