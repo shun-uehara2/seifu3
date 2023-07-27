@@ -6,7 +6,7 @@ function generateQuestion() {
   num1 = Math.floor(Math.random() * 21) - 10; // Generate a random number between -10 and 10.
   num2 = Math.floor(Math.random() * 21) - 10; // Generate a random number between -10 and 10.
   correctAnswer = num1 + num2;
-  document.getElementById('question').innerText = "次の計算を してください：" + num1 + " + " + num2 + " = ?";
+  document.getElementById('question').innerText = "次の計算をしてください：" + num1 + " + " + num2 + " = ?";
 }
 
 function checkSign() {
